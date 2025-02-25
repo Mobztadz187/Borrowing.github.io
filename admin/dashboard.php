@@ -27,7 +27,7 @@ if (!$user) {
 }
 
 // Fetch stock data from the correct table
-$stmt = $conn->prepare("SELECT item, SUM(stock) as total_stock FROM item_stocks GROUP BY item");
+$stmt = $conn->prepare("SELECT item, SUM(stock) as total_stock FROM product GROUP BY item");
 $stmt->execute();
 $result = $stmt->get_result();
 $items = [];
