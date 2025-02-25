@@ -21,7 +21,7 @@
         <tbody>
             <?php
             include("../database/register_db.php");
-            $sql = "SELECT * FROM item_stocks";
+            $sql = "SELECT * FROM product";
             $result = $conn->query($sql);
             while ($row = $result->fetch_assoc()) {
                 echo "
