@@ -45,6 +45,7 @@
     </table>
 </form>
 
+
 <script>
     // Select or deselect all checkboxes
     document.getElementById('selectAll').addEventListener('change', function() {
